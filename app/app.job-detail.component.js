@@ -9,12 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var Job_1 = require('./Job');
 var JobDetailComponent = (function () {
     function JobDetailComponent() {
     }
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Job_1.Job)
+    ], JobDetailComponent.prototype, "job", void 0);
     JobDetailComponent = __decorate([
-        core_1.component({
-            selector: 'my-job-detail'
+        core_1.Component({
+            selector: 'my-job-detail',
+            template: "\n    <section>\n        <h2>{{job}}</h2>\n        <p>\n            This is the description of the Job\n        <p>\n        <div *ngIf=\"job\" class=\"selected-job\">\n\t\t\t<h2>{{job.company}}</h2>\n\t\t\t<p>{{job.title}}</p>\n\t\t</div>\n    </section>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], JobDetailComponent);

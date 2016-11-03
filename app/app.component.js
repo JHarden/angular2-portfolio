@@ -9,17 +9,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var JOBS = [
-    { id: 1, company: 'PNI Digital Media', title: 'Front End Developer' },
-    { id: 2, company: 'Central 1', title: 'Software Specialist 2' },
-    { id: 3, company: 'Pramerica', title: 'Java Developer' },
-];
-var Job = (function () {
-    function Job() {
-    }
-    return Job;
-}());
-exports.Job = Job;
+var constants_1 = require('./config/constants');
+var JOBS = constants_1.Constants.JOBS;
 var AppComponent = (function () {
     function AppComponent() {
         this.jobList = JOBS;
@@ -31,7 +22,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<h1>Testing BrowserSync</h1>\n  <div class=\"job\">\n  \t<ul class=\"job-list\">\n\t  <li *ngFor=\"let job of jobList\" (click)=\"onSelect(job)\">\n\t  \t\t<span>{{job.company}}</span>\n\t  </li>\n\t</ul>\n\t<div *ngIf=\"selectedJob\" class=\"selected-job\">\n\t\t<h2>{{selectedJob.company}}</h2>\n\t\t<p>{{selectedJob.title}}</p>\n\t</div>\n  </div>\n  "
+            template: "<h1>Testing BrowserSync</h1>\n\t\t<div class=\"job\">\n\t\t\t<ul class=\"job-list\">\n\t\t\t<li *ngFor=\"let job of jobList\" (click)=\"onSelect(job)\">\n\t\t\t\t\t<span>{{job.company}}</span>\n\t\t\t</li>\n\t\t</ul>\n\t\t<my-job-detail [job]=\"selectedJob\"></my-job-detail>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
