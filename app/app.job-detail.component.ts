@@ -12,7 +12,11 @@ import { Job } from './Job';
         <p>
         <div *ngIf="job" class="selected-job">
 			<h2>{{job.company}}</h2>
-			<p>{{job.title}}</p>
+			<h3>{{job.title}}</h3>
+            <p>{{job.description}}</p>   
+            <p>
+                <a href="{{job.url}}" target="_blank">{{job.url}}</a>
+            </p>         
 		</div>
     </section>
     `
@@ -21,6 +25,6 @@ import { Job } from './Job';
 
 export class JobDetailComponent {
 
-    @Input()
-    job: Job;
+    @Input() job: Job;   
+
 }
