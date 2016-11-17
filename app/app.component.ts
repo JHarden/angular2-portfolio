@@ -22,7 +22,6 @@ const JOBS = Constants.JOBS;
   `
 })
 
-
 export class AppComponent {
 
 	jobList = JOBS;

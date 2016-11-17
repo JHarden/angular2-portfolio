@@ -10,7 +10,8 @@ export class Constants {
      I've since moved to our Development department, where I now work as a front end engineer on our Apollo Platform. I primarily 
      work with Angular 1.5, Typescript, SCSS, ES6 javaScript on a node server.
      `,
-    url: 'https://pnimedia.com'  },
+            url: 'https://pnimedia.com'
+        },
         {
             id: 2, company: 'Central 1', title: 'Software Specialist 2',
             description:
@@ -18,7 +19,8 @@ export class Constants {
     new features to the online banking systems of Credit Unions in Ontario and BC. Within this role I developed tools using javaScript and Java
     on Linux machines with MSSQL server dbs. I became familiar with Apache Cordova, swift and C#, from our development of iOS and Andriod apps
     ` ,
-    url: 'https://central1.com'   },
+            url: 'https://central1.com'
+        },
         {
             id: 3, company: 'Pramerica', title: 'Java Developer',
             description:
@@ -26,7 +28,8 @@ export class Constants {
     focusing mainly on maintining our third party CMS tool. After my first year I moved towards more of a full-stack developer role in
     which I worked mainly with Spring, MS SQL server, JSP, javaScript/jQuery on windows servers.    
      `,
-    url: 'https://pramerica.ie'   },
+            url: 'https://pramerica.ie'
+        },
         {
             id: 4, company: 'Freelance', title: 'Freelance development',
             description:
@@ -35,8 +38,6 @@ export class Constants {
             and jQuery, on a Platform by another local company: Lemonstand.            
         `, url: 'https://fuud.ca'
         }
-
-
     ];
 
     public static aboutMe: string =

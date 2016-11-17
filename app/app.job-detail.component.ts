@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Job } from './Job';
 
 @Component({
@@ -25,6 +25,6 @@ import { Job } from './Job';
 
 export class JobDetailComponent {
 
-    @Input() job: Job;   
+    @Input() job: Job;
 
 }
