@@ -4,7 +4,7 @@ export class Constants {
 
     public static JOBS: Job[] = [
         {
-            id: 1, company: 'PNI Digital Media', title: 'Front End Developer',
+            id: 1, company: 'PNI Digital Media', title: 'Front-End Developer',
             description:
             `I've been working at PNI Digital Media since March 2015. I started off as a web designer within our creative department.
      I've since moved to our Development department, where I now work as a front end engineer on our Apollo Platform. I primarily 
@@ -22,7 +22,7 @@ export class Constants {
             url: 'https://central1.com'
         },
         {
-            id: 3, company: 'Pramerica', title: 'Java Developer',
+            id: 3, company: 'Pramerica', title: 'Full Stack Developer',
             description:
             `I started my career as a software developer in Pramerica, in a small town in rural Ireland. I stated off as a back end Java developer
     focusing mainly on maintining our third party CMS tool. After my first year I moved towards more of a full-stack developer role in
@@ -31,7 +31,7 @@ export class Constants {
             url: 'https://pramerica.ie'
         },
         {
-            id: 4, company: 'Freelance', title: 'Freelance development',
+            id: 4, company: 'Freelance', title: 'Front-End Developer',
             description:
             `I've worked on various projects for freelance clients over the years. The most recent being fuud.ca, a local Vancouver startup focusing
             on fresh farm to table produce, and a weekly meal service. The project itself was purely front end development, focusing on HTML, SCSS, javaScript

@@ -6,10 +6,6 @@ import { Job } from './Job';
     template:
     `
     <section>
-        <h2>{{job}}</h2>
-        <p>
-            This is the description of the Job
-        <p>
         <div *ngIf="job" class="selected-job">
 			<h2>{{job.company}}</h2>
 			<h3>{{job.title}}</h3>

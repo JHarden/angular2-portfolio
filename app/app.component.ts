@@ -9,7 +9,7 @@ const JOBS = Constants.JOBS;
 	selector: 'my-app',
 	template:
 	`
-	<h1>John Harden's Portfolio</h1>
+	<h1>John Harden</h1>
 	<about-me></about-me>
 	<section class="job">
 		<ul class="job-list">

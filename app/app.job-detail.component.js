@@ -22,7 +22,7 @@ __decorate([
 JobDetailComponent = __decorate([
     core_1.Component({
         selector: 'my-job-detail',
-        template: "\n    <section>\n        <h2>{{job}}</h2>\n        <p>\n            This is the description of the Job\n        <p>\n        <div *ngIf=\"job\" class=\"selected-job\">\n\t\t\t<h2>{{job.company}}</h2>\n\t\t\t<h3>{{job.title}}</h3>\n            <p>{{job.description}}</p>   \n            <p>\n                <a href=\"{{job.url}}\" target=\"_blank\">{{job.url}}</a>\n            </p>         \n\t\t</div>\n    </section>\n    "
+        template: "\n    <section>\n        <div *ngIf=\"job\" class=\"selected-job\">\n\t\t\t<h2>{{job.company}}</h2>\n\t\t\t<h3>{{job.title}}</h3>\n            <p>{{job.description}}</p>   \n            <p>\n                <a href=\"{{job.url}}\" target=\"_blank\">{{job.url}}</a>\n            </p>         \n\t\t</div>\n    </section>\n    "
     }),
     __metadata("design:paramtypes", [])
 ], JobDetailComponent);

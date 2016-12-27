@@ -1,0 +1,57 @@
+ul.job-list {
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+
+    li{
+        width: 25%;
+        background: #EBEBEB;
+        height: 20px;
+        padding: 20px;
+        outline: 1px solid #FFF;
+        transition: all 0.25s ease-in;
+
+        &:hover{
+            background: #5B5BFF;
+            color: #FFF;
+            cursor: pointer;
+        }
+    }
+}
+
+.selected-job{
+
+    h2{
+        animation: slide-from-right 0.5s ease-in;
+    }
+    h3{
+        animation: slide-from-right 0.8s ease-in;
+    }
+    p{
+        animation: slide-from-bottom 0.5s ease-in;
+    }
+}
+
+@keyframes slide-from-right{
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-from-bottom{
+    0%{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

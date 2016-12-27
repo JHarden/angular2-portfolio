@@ -24,7 +24,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n\t<h1>John Harden's Portfolio</h1>\n\t<about-me></about-me>\n\t<section class=\"job\">\n\t\t<ul class=\"job-list\">\n\t\t<li *ngFor=\"let job of jobList\" (click)=\"onSelect(job)\">\n\t\t\t\t<span>{{job.company}}</span>\n\t\t</li>\n\t</ul>\n\t<my-job-detail [job]=\"selectedJob\"></my-job-detail>\n\t</section>\n  "
+        template: "\n\t<h1>John Harden</h1>\n\t<about-me></about-me>\n\t<section class=\"job\">\n\t\t<ul class=\"job-list\">\n\t\t<li *ngFor=\"let job of jobList\" (click)=\"onSelect(job)\">\n\t\t\t\t<span>{{job.company}}</span>\n\t\t</li>\n\t</ul>\n\t<my-job-detail [job]=\"selectedJob\"></my-job-detail>\n\t</section>\n  "
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
