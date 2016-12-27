@@ -4,12 +4,13 @@ import { Job } from './Job';
 import { Constants } from './config/constants';
 
 const JOBS = Constants.JOBS;
+const TITLE = Constants.title;
 
 @Component({
 	selector: 'my-app',
 	template:
 	`
-	<h1>John Harden</h1>
+	<h1>{{title}}</h1>
 	<about-me></about-me>
 	<section class="job">
 		<ul class="job-list">
@@ -25,7 +26,7 @@ const JOBS = Constants.JOBS;
 export class AppComponent {
 
 	jobList = JOBS;
-	title = 'John Harden Portfolio';
+	title = TITLE;
 	selectedJob: Job;
 
 	onSelect(job: Job): void {

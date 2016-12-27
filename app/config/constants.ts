@@ -48,4 +48,6 @@ export class Constants {
     how many times I've rewritten this page using different technologies!.
     I'm originially from the north west of Ireland, I've travelled around the world and decided to settle in Vancouver. It is a lovely place. :D    
     `
+
+    public static title: string = 'John Harden';
 };

@@ -26,6 +26,7 @@ Constants.JOBS = [
     }
 ];
 Constants.aboutMe = "\n    Hi, my name is John Harden. I'm a front end developer living in Vancouver, British Columbia. I've been here since 2014, and have just recieved\n    Permanent Residency status (YAY!). I like to keep myself occupied by exploring this beautiful country, as well as the rest of the pacific north west.\n    I very much enjoy running, swimming, hiking and all that jazz. In my extra spare time I like to learn about the coolest new things in tech. God knows\n    how many times I've rewritten this page using different technologies!.\n    I'm originially from the north west of Ireland, I've travelled around the world and decided to settle in Vancouver. It is a lovely place. :D    \n    ";
+Constants.title = 'John Harden';
 exports.Constants = Constants;
 ;
 //# sourceMappingURL=constants.js.map
