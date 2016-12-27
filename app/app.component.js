@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var constants_1 = require('./config/constants');
+var core_1 = require("@angular/core");
+var constants_1 = require("./config/constants");
 var JOBS = constants_1.Constants.JOBS;
 var AppComponent = (function () {
     function AppComponent() {
@@ -19,14 +19,14 @@ var AppComponent = (function () {
     AppComponent.prototype.onSelect = function (job) {
         this.selectedJob = job;
     };
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            template: "\n\t<h1>John Harden's Portfolio</h1>\n\t<about-me></about-me>\n\t<section class=\"job\">\n\t\t<ul class=\"job-list\">\n\t\t<li *ngFor=\"let job of jobList\" (click)=\"onSelect(job)\">\n\t\t\t\t<span>{{job.company}}</span>\n\t\t</li>\n\t</ul>\n\t<my-job-detail [job]=\"selectedJob\"></my-job-detail>\n\t</section>\n  "
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
     return AppComponent;
 }());
+AppComponent = __decorate([
+    core_1.Component({
+        selector: 'my-app',
+        template: "\n\t<h1>John Harden's Portfolio</h1>\n\t<about-me></about-me>\n\t<section class=\"job\">\n\t\t<ul class=\"job-list\">\n\t\t<li *ngFor=\"let job of jobList\" (click)=\"onSelect(job)\">\n\t\t\t\t<span>{{job.company}}</span>\n\t\t</li>\n\t</ul>\n\t<my-job-detail [job]=\"selectedJob\"></my-job-detail>\n\t</section>\n  "
+    }),
+    __metadata("design:paramtypes", [])
+], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

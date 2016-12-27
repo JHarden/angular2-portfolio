@@ -46,6 +46,6 @@ export class Constants {
     Permanent Residency status (YAY!). I like to keep myself occupied by exploring this beautiful country, as well as the rest of the pacific north west.
     I very much enjoy running, swimming, hiking and all that jazz. In my extra spare time I like to learn about the coolest new things in tech. God knows
     how many times I've rewritten this page using different technologies!.
-    I'm originially from the north west of Ireland, I've travelled around the world and decided to settle in Vancouver. It is a lovely place. :Digital    
+    I'm originially from the north west of Ireland, I've travelled around the world and decided to settle in Vancouver. It is a lovely place. :D    
     `
 };
