@@ -1,4 +1,13 @@
-import { Component, Input } from '@angular/core';
+import { 
+    Component,
+    Input,
+    trigger,
+    state,
+    style,
+    transition,
+    animate 
+} from '@angular/core';
+
 import { Job } from './Job';
 
 @Component({
@@ -6,8 +15,8 @@ import { Job } from './Job';
     template:
     `
     <section>
-        <div *ngIf="job" class="selected-job">
-			<h2 [ngStyle]="{'animation': 'slide-from-right 0.5s ease-in'}">{{job.company}}</h2>
+        <div *ngIf="job" class="selected-job" [@jobState]="job.state">
+			<h2>{{job.company}}</h2>
 			<h3>{{job.title}}</h3>
             <p>{{job.description}}</p>   
             <p>
@@ -16,6 +25,20 @@ import { Job } from './Job';
 		</div>
     </section>
     `
+    ,
+    animations: [
+        trigger('jobState', [
+            state('inactive', style({
+                backgroundColor: '#EE0000',
+            })),
+            state('active',   style({
+                backgroundColor: '#EBEBEB',
+            })),
+            transition('inactive => active', animate('100ms ease-in')),
+            transition('active => inactive', animate('100ms ease-out'))
+        ])
+    ]
+
 })
 
 

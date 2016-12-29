@@ -14,21 +14,12 @@ ul.job-list {
     outline: 5px solid #FFF;
     transition: all 0.25s ease-in; }
     ul.job-list li:hover {
-      background: #9797ff;
+      background: #b4b4f9;
       color: #4545d2;
       cursor: pointer; }
-    ul.job-list li.active {
+    ul.job-list li.selected {
       background: #5B5BFF;
-      color: #fff; }
-
-.selected-job h2 {
-  animation: slide-from-right 0.5s ease-in; }
-
-.selected-job h3 {
-  animation: slide-from-right 0.8s ease-in; }
-
-.selected-job p {
-  animation: slide-from-bottom 0.5s ease-in; }
+      color: #FFF; }
 
 @keyframes slide-from-right {
   0% {

@@ -14,29 +14,29 @@ ul.job-list {
         transition: all 0.25s ease-in;
 
         &:hover{
-            background: #9797ff;
+            background: #b4b4f9;
             color: #4545d2;
             cursor: pointer;
         }
 
-        &.active{
+        &.selected{
             background: #5B5BFF;
-            color: #fff;
+            color: #FFF;
         }
     }
 }
 
 .selected-job{
 
-    h2{
-        animation: slide-from-right 0.5s ease-in;
-    }
-    h3{
-        animation: slide-from-right 0.8s ease-in;
-    }
-    p{
-        animation: slide-from-bottom 0.5s ease-in;
-    }
+    // h2{
+    //     animation: slide-from-right 0.5s ease-in;
+    // }
+    // h3{
+    //     animation: slide-from-right 0.8s ease-in;
+    // }
+    // p{
+    //     animation: slide-from-bottom 0.5s ease-in;
+    // }
 }
 
 @keyframes slide-from-right{

@@ -18,6 +18,7 @@ var AppComponent = (function () {
         this.title = TITLE;
     }
     AppComponent.prototype.onSelect = function (job) {
+        job.state = 'active';
         this.selectedJob = job;
     };
     return AppComponent;
@@ -25,7 +26,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n\t<h1>{{title}}</h1>\n\t<about-me></about-me>\n\t<section class=\"job\">\n\t\t<ul class=\"job-list\">\n\t\t<li *ngFor=\"let job of jobList\" (click)=\"onSelect(job)\" [ngClass]=\"{'active' : selectedJob === job}\">\n\t\t\t\t<span>{{job.company}}</span>\n\t\t</li>\n\t</ul>\n\t<my-job-detail [job]=\"selectedJob\"></my-job-detail>\n\t</section>\n  "
+        template: "\n\t<h1>{{title}}</h1>\n\t<about-me></about-me>\n\t<section class=\"job\">\n\t\t<ul class=\"job-list\">\n\t\t<li *ngFor=\"let job of jobList\" (click)=\"onSelect(job)\" [ngClass]=\"{'selected' : selectedJob === job}\">\n\t\t\t\t<span>{{job.company}}</span>\n\t\t\t\t<my-job-detail [job]=\"job\"></my-job-detail>\n\t\t</li>\n\t</ul>\n\t</section>\n  "
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
