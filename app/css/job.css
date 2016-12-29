@@ -11,12 +11,15 @@ ul.job-list {
     background: #EBEBEB;
     height: 20px;
     padding: 20px;
-    outline: 1px solid #FFF;
+    outline: 5px solid #FFF;
     transition: all 0.25s ease-in; }
     ul.job-list li:hover {
-      background: #5B5BFF;
-      color: #FFF;
+      background: #9797ff;
+      color: #4545d2;
       cursor: pointer; }
+    ul.job-list li.active {
+      background: #5B5BFF;
+      color: #fff; }
 
 .selected-job h2 {
   animation: slide-from-right 0.5s ease-in; }

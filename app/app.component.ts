@@ -14,7 +14,7 @@ const TITLE = Constants.title;
 	<about-me></about-me>
 	<section class="job">
 		<ul class="job-list">
-		<li *ngFor="let job of jobList" (click)="onSelect(job)">
+		<li *ngFor="let job of jobList" (click)="onSelect(job)" [ngClass]="{'active' : selectedJob === job}">
 				<span>{{job.company}}</span>
 		</li>
 	</ul>

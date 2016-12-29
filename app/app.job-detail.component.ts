@@ -7,7 +7,7 @@ import { Job } from './Job';
     `
     <section>
         <div *ngIf="job" class="selected-job">
-			<h2>{{job.company}}</h2>
+			<h2 [ngStyle]="{'animation': 'slide-from-right 0.5s ease-in'}">{{job.company}}</h2>
 			<h3>{{job.title}}</h3>
             <p>{{job.description}}</p>   
             <p>
