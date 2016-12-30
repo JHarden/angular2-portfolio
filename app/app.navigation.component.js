@@ -10,19 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var constants_1 = require("./config/constants");
-var about = constants_1.Constants.aboutMe;
-var AboutMeComponent = (function () {
-    function AboutMeComponent() {
-        this.about = about;
+var nav = constants_1.Constants.NAVIGATION;
+var NavigationComponent = (function () {
+    function NavigationComponent() {
+        this.navigation = nav;
     }
-    return AboutMeComponent;
+    return NavigationComponent;
 }());
-AboutMeComponent = __decorate([
+NavigationComponent = __decorate([
     core_1.Component({
-        selector: 'about-me',
-        template: "\n    <div class=\"about-content\">\n        <h2>About Me</h2>\n        <span class=\"line\"></span>\n        <p>{{about}}</p>\n    </div>\n    "
+        selector: 'navigation',
+        template: "\n    <span>\n        <ul class=\"navigation-wrapper\" id=\"navigation-list\">\n            <li class=\"header-icon\">\n                <a href=\"#\">John Harden</a>\n            </li>\n            <li *ngFor=\"let item of navigation\">\n                <a href=\"{{item.anchor}}\"> {{item.name}} </a>\n            </li>\n        </ul>\n    </span>\n    "
     }),
     __metadata("design:paramtypes", [])
-], AboutMeComponent);
-exports.AboutMeComponent = AboutMeComponent;
-//# sourceMappingURL=app.about-me.component.js.map
+], NavigationComponent);
+exports.NavigationComponent = NavigationComponent;
+//# sourceMappingURL=app.navigation.component.js.map

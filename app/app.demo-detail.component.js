@@ -9,20 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var constants_1 = require("./config/constants");
-var about = constants_1.Constants.aboutMe;
-var AboutMeComponent = (function () {
-    function AboutMeComponent() {
-        this.about = about;
+var demo_1 = require("./demo");
+var DemoDetailComponent = (function () {
+    function DemoDetailComponent() {
     }
-    return AboutMeComponent;
+    return DemoDetailComponent;
 }());
-AboutMeComponent = __decorate([
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", demo_1.Demo)
+], DemoDetailComponent.prototype, "demo", void 0);
+DemoDetailComponent = __decorate([
     core_1.Component({
-        selector: 'about-me',
-        template: "\n    <div class=\"about-content\">\n        <h2>About Me</h2>\n        <span class=\"line\"></span>\n        <p>{{about}}</p>\n    </div>\n    "
+        selector: 'demo-detail',
+        template: "\n    <div *ngIf=\"demo\" class=\"demo-content\">\n        <h2>{{demo.title}}</h2>\n        <span class=\"line\"></span>\n        <p>{{demo.description}}</p>\n    \n        <a target=\"_blank\" href=\"{{demo.href}}\" class=\"demo-link\" >Start the Demo</a>\n        <a target=\"_blank\" href=\"#\" class=\"github-link\">view on github</a>\n    \n    </div>\n    "
     }),
     __metadata("design:paramtypes", [])
-], AboutMeComponent);
-exports.AboutMeComponent = AboutMeComponent;
-//# sourceMappingURL=app.about-me.component.js.map
+], DemoDetailComponent);
+exports.DemoDetailComponent = DemoDetailComponent;
+//# sourceMappingURL=app.demo-detail.component.js.map

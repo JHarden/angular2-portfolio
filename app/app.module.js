@@ -12,7 +12,9 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var app_job_detail_component_1 = require("./app.job-detail.component");
+var app_demo_detail_component_1 = require("./app.demo-detail.component");
 var app_about_me_component_1 = require("./app.about-me.component");
+var app_navigation_component_1 = require("./app.navigation.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -24,7 +26,9 @@ AppModule = __decorate([
         declarations: [
             app_component_1.AppComponent,
             app_job_detail_component_1.JobDetailComponent,
-            app_about_me_component_1.AboutMeComponent
+            app_demo_detail_component_1.DemoDetailComponent,
+            app_about_me_component_1.AboutMeComponent,
+            app_navigation_component_1.NavigationComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     }),

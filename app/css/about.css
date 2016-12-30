@@ -1,3 +1,34 @@
 .about-content {
-  background: #EBEBEB;
-  padding: 10px; }
+  background: rgba(235, 235, 235, 0.5);
+  padding: 10px;
+  transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
+  position: relative; }
+  .about-content h2 {
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    transition: all 0.5s cubic-bezier(0, 0, 0.2, 1); }
+  .about-content:hover {
+    background: rgba(235, 235, 235, 0.75); }
+    .about-content:hover h2 {
+      color: #3C3D90;
+      -ms-transform: translateY(-20px);
+      transform: translateY(-20px); }
+    .about-content:hover .line {
+      width: 110px;
+      height: 5px;
+      border-bottom: 1px solid #3C3D90;
+      display: block;
+      position: absolute;
+      top: 35px;
+      transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+      animation: line-animate 0.25s cubic-bezier(0, 0, 0.2, 1); }
+  .about-content p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5; }
+
+@keyframes line-animate {
+  0% {
+    transform: translateY(40px); }
+  100% {
+    transform: translateY(0px); } }

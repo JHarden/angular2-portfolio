@@ -1,0 +1,42 @@
+ul.navigation-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    background: rgba(235, 235, 235, 0.75);
+    transition: all 0.25s ease-in;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    z-index: 1;
+
+    &:hover{
+        background: #FFF;
+        cursor: pointer;
+    }
+
+    li{
+        list-style: none;
+        padding: 15px 20px 0;
+        font-size: 1rem;
+        width: 25%;
+
+        a{
+            transition: all 0.25s ease-in;
+            color: #000;
+            text-decoration: none;
+
+            &:hover{
+                font-size: 1.5rem;
+            }
+        }
+
+        &.header-icon{
+            padding: 10px 20px 0;
+            a{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

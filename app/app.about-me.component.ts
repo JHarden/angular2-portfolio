@@ -9,6 +9,7 @@ const about = Constants.aboutMe;
     `
     <div class="about-content">
         <h2>About Me</h2>
+        <span class="line"></span>
         <p>{{about}}</p>
     </div>
     `

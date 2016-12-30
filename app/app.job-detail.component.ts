@@ -32,10 +32,10 @@ import { Job } from './Job';
                 opacity: 0,
                 transform: 'translateX(-100%)'
             }),
-            animate('0.2s ease-in')
+            animate('0.4s ease-in')
             ]),
             transition('* => void', [
-            animate('0.2s 10 ease-out', style({
+            animate('0.4s 10 ease-out', style({
                 opacity: 0,
                 transform: 'translateX(100%)'
             }))

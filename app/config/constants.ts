@@ -1,4 +1,5 @@
 import { Job } from '../Job';
+import { Demo } from '../Demo';
 
 export class Constants {
 
@@ -52,7 +53,39 @@ export class Constants {
     I very much enjoy running, swimming, hiking and all that jazz. In my extra spare time I like to learn about the coolest new things in tech. God knows
     how many times I've rewritten this page using different technologies!.
     I'm originially from the north west of Ireland, I've travelled around the world and decided to settle in Vancouver. It is a lovely place. :D    
-    `
+    `;
 
     public static title: string = 'John Harden';
+
+    public static DEMOS: Demo[] = [
+        {
+            title: 'Tile Animation Proof of Concept',
+            description: 'Description of tile animation thingy',
+            url: 'http://johnmharden.com/tiles.html',
+            githubUrl: 'https://github.com/JHarden/tile-slide-poc'
+        },
+        {
+            title: 'Filtergram',
+            description: 'Instagram clone using canvas and localStorage to manipulate / save image',
+            url: 'http://johnmharden.com/filtergram.html',
+            githubUrl: 'https://github.com/JHarden/filtergram'
+        }
+    ];
+
+    public static NAVIGATION: any = [
+
+        {
+            name: 'about',
+            anchor: '#about'
+        },
+        {
+            name: 'demos',
+            anchor: '#demos'
+        },
+        {
+            name: 'work',
+            anchor: '#work'
+        },
+        
+    ]
 };

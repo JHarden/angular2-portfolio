@@ -1,4 +1,46 @@
 .about-content {
-    background: #EBEBEB;
+    background: rgba(235, 235, 235, 0.5);
     padding: 10px;
+    transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
+    position: relative;
+
+    h2{
+        transform: translateX(0);
+        transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    &:hover{
+    background: rgba(235, 235, 235, 0.75);
+        h2{
+            color: #3C3D90;
+            transform: translateY(-20px);
+        }
+
+        .line{
+            width: 110px;
+            height: 5px;
+            border-bottom: 1px solid #3C3D90;
+            display: block;
+            position: absolute;
+            top: 35px;
+            transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+            animation: line-animate 0.25s cubic-bezier(0, 0, 0.2, 1);
+        }
+    }
+
+    p{
+        font-size: 1rem;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+}
+
+@keyframes line-animate {
+    0%{
+        transform: translateY(40px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
 }

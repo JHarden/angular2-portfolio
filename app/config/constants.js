@@ -32,6 +32,34 @@ Constants.JOBS = [
 ];
 Constants.aboutMe = "\n    Hi, my name is John Harden. I'm a front end developer living in Vancouver, British Columbia. I've been here since 2014, and have just recieved\n    Permanent Residency status (YAY!). I like to keep myself occupied by exploring this beautiful country, as well as the rest of the pacific north west.\n    I very much enjoy running, swimming, hiking and all that jazz. In my extra spare time I like to learn about the coolest new things in tech. God knows\n    how many times I've rewritten this page using different technologies!.\n    I'm originially from the north west of Ireland, I've travelled around the world and decided to settle in Vancouver. It is a lovely place. :D    \n    ";
 Constants.title = 'John Harden';
+Constants.DEMOS = [
+    {
+        title: 'Tile Animation Proof of Concept',
+        description: 'Description of tile animation thingy',
+        url: 'http://johnmharden.com/tiles.html',
+        githubUrl: 'https://github.com/JHarden/tile-slide-poc'
+    },
+    {
+        title: 'Filtergram',
+        description: 'Instagram clone using canvas and localStorage to manipulate / save image',
+        url: 'http://johnmharden.com/filtergram.html',
+        githubUrl: 'https://github.com/JHarden/filtergram'
+    }
+];
+Constants.NAVIGATION = [
+    {
+        name: 'about',
+        anchor: '#about'
+    },
+    {
+        name: 'demos',
+        anchor: '#demos'
+    },
+    {
+        name: 'work',
+        anchor: '#work'
+    },
+];
 exports.Constants = Constants;
 ;
 //# sourceMappingURL=constants.js.map

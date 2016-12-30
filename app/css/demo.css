@@ -1,0 +1,51 @@
+.demo-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 5px; }
+  .demo-wrapper .demos {
+    width: 100%;
+    margin-right: 5px;
+    background: rgba(235, 235, 235, 0.5);
+    transition: all 0.25s cubic-bezier(0, 0, 0.2, 1);
+    min-height: 200px;
+    height: 200px; }
+    .demo-wrapper .demos .demo-content {
+      padding: 10px;
+      float: left;
+      position: relative;
+      width: 100%;
+      height: 100%; }
+    .demo-wrapper .demos:last-of-type {
+      margin-right: 0; }
+    .demo-wrapper .demos h2 {
+      transition: all 0.25s cubic-bezier(0, 0, 0.2, 1); }
+    .demo-wrapper .demos:hover {
+      background: rgba(235, 235, 235, 0.75);
+      cursor: pointer; }
+      .demo-wrapper .demos:hover h2 {
+        color: #3C3D90;
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px); }
+      .demo-wrapper .demos:hover .line {
+        width: 50%;
+        height: 2px;
+        background: linear-gradient(to right, #3C3D90, transparent);
+        display: block;
+        position: absolute;
+        top: 35px;
+        transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+        animation: line-animate 0.25s cubic-bezier(0, 0, 0.2, 1); }
+  .demo-wrapper a.demo-link {
+    color: #000;
+    font-weight: 400;
+    position: absolute;
+    bottom: 35px;
+    left: 15px; }
+  .demo-wrapper a.github-link {
+    color: #000;
+    font-weight: 400;
+    position: absolute;
+    bottom: 35px;
+    right: 30px; }
