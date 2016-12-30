@@ -22,17 +22,23 @@ __decorate([
 JobDetailComponent = __decorate([
     core_1.Component({
         selector: 'my-job-detail',
-        template: "\n    <section>\n        <div *ngIf=\"job\" class=\"selected-job\" [@jobState]=\"job.state\">\n\t\t\t<h2>{{job.company}}</h2>\n\t\t\t<h3>{{job.title}}</h3>\n            <p>{{job.description}}</p>   \n            <p>\n                <a href=\"{{job.url}}\" target=\"_blank\">{{job.url}}</a>\n            </p>         \n\t\t</div>\n    </section>\n    ",
+        template: "\n    <div *ngIf=\"job\" class=\"selected-job\" [@jobState]=\"job.state\">\n        <h2>{{job.company}}</h2>\n        <h3>{{job.title}}</h3>\n        <p>{{job.description}}</p>   \n        <p>\n            <a href=\"{{job.url}}\" target=\"_blank\">{{job.url}}</a>\n        </p>         \n    </div>\n    ",
         animations: [
             core_1.trigger('jobState', [
-                core_1.state('inactive', core_1.style({
-                    backgroundColor: '#EE0000',
-                })),
-                core_1.state('active', core_1.style({
-                    backgroundColor: '#EBEBEB',
-                })),
-                core_1.transition('inactive => active', core_1.animate('100ms ease-in')),
-                core_1.transition('active => inactive', core_1.animate('100ms ease-out'))
+                core_1.state('active', core_1.style({ opacity: 1, transform: 'translateX(0)' })),
+                core_1.transition('void => *', [
+                    core_1.style({
+                        opacity: 0,
+                        transform: 'translateX(-100%)'
+                    }),
+                    core_1.animate('0.2s ease-in')
+                ]),
+                core_1.transition('* => void', [
+                    core_1.animate('0.2s 10 ease-out', core_1.style({
+                        opacity: 0,
+                        transform: 'translateX(100%)'
+                    }))
+                ])
             ])
         ]
     }),

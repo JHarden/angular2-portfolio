@@ -7,15 +7,16 @@ body {
 h1 {
   color: #000;
   text-align: center;
-  font-size: 4rem; }
+  font-size: 4rem;
+  font-weight: 100; }
 
 h2, h3 {
   color: #444;
   font-weight: lighter; }
 
-.about {
-  font-size: 1rem;
-  background: yellow; }
+.about-content {
+  background: #EBEBEB;
+  padding: 10px; }
 
 ul.job-list {
   list-style: none;
@@ -24,13 +25,15 @@ ul.job-list {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem; }
   ul.job-list li {
     width: 25%;
     background: #EBEBEB;
     height: 20px;
     padding: 20px;
-    outline: 5px solid #FFF;
+    outline: 0.32rem solid #FFF;
     transition: all 0.25s ease-in; }
     ul.job-list li:hover {
       background: #b4b4f9;
@@ -39,6 +42,18 @@ ul.job-list {
     ul.job-list li.selected {
       background: #5B5BFF;
       color: #FFF; }
+
+.selected-job {
+  opacity: 0;
+  position: relative;
+  padding: 10px;
+  background: #EBEBEB; }
+
+.job-wrapper {
+  position: relative; }
+
+.job-details {
+  position: absolute; }
 
 @keyframes slide-from-right {
   0% {

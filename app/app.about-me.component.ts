@@ -7,11 +7,10 @@ const about = Constants.aboutMe;
     selector: 'about-me',
     template:
     `
-    <section id="about-me">
-    <h2>About Me</h2>
-    <p>{{about}}</p>
-
-    </section>    
+    <div class="about-content">
+        <h2>About Me</h2>
+        <p>{{about}}</p>
+    </div>
     `
 })
 

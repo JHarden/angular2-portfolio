@@ -14,31 +14,34 @@ import { Job } from './Job';
     selector: 'my-job-detail',
     template:
     `
-    <section>
-        <div *ngIf="job" class="selected-job" [@jobState]="job.state">
-			<h2>{{job.company}}</h2>
-			<h3>{{job.title}}</h3>
-            <p>{{job.description}}</p>   
-            <p>
-                <a href="{{job.url}}" target="_blank">{{job.url}}</a>
-            </p>         
-		</div>
-    </section>
+    <div *ngIf="job" class="selected-job" [@jobState]="job.state">
+        <h2>{{job.company}}</h2>
+        <h3>{{job.title}}</h3>
+        <p>{{job.description}}</p>   
+        <p>
+            <a href="{{job.url}}" target="_blank">{{job.url}}</a>
+        </p>         
+    </div>
     `
     ,
     animations: [
         trigger('jobState', [
-            state('inactive', style({
-                backgroundColor: '#EE0000',
-            })),
-            state('active',   style({
-                backgroundColor: '#EBEBEB',
-            })),
-            transition('inactive => active', animate('100ms ease-in')),
-            transition('active => inactive', animate('100ms ease-out'))
+            state('active', style({opacity: 1, transform: 'translateX(0)'})),
+            transition('void => *', [
+            style({
+                opacity: 0,
+                transform: 'translateX(-100%)'
+            }),
+            animate('0.2s ease-in')
+            ]),
+            transition('* => void', [
+            animate('0.2s 10 ease-out', style({
+                opacity: 0,
+                transform: 'translateX(100%)'
+            }))
+            ])
         ])
     ]
-
 })
 
 

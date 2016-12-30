@@ -4,13 +4,15 @@ ul.job-list {
     padding-left: 0;
     display: flex;
     flex-direction: row;
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
 
     li{
         width: 25%;
         background: #EBEBEB;
         height: 20px;
         padding: 20px;
-        outline: 5px solid #FFF;
+        outline: 0.32rem solid #FFF;
         transition: all 0.25s ease-in;
 
         &:hover{
@@ -27,16 +29,18 @@ ul.job-list {
 }
 
 .selected-job{
+    opacity: 0;
+    position: relative;
+    padding: 10px;
+    background: #EBEBEB;
+}
 
-    // h2{
-    //     animation: slide-from-right 0.5s ease-in;
-    // }
-    // h3{
-    //     animation: slide-from-right 0.8s ease-in;
-    // }
-    // p{
-    //     animation: slide-from-bottom 0.5s ease-in;
-    // }
+.job-wrapper{
+    position: relative;
+}
+
+.job-details{
+    position: absolute;
 }
 
 @keyframes slide-from-right{

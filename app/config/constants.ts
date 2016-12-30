@@ -11,7 +11,7 @@ export class Constants {
      work with Angular 1.5, Typescript, SCSS, ES6 javaScript on a node server.
      `,
             url: 'https://pnimedia.com',
-            state: 'inactive'
+            state: 'void'
         },
         {
             id: 2, company: 'Central 1', title: 'Software Specialist 2',
@@ -21,7 +21,7 @@ export class Constants {
     on Linux machines with MSSQL server dbs. I became familiar with Apache Cordova, swift and C#, from our development of iOS and Andriod apps
     ` ,
             url: 'https://central1.com',
-            state: 'inactive'
+            state: 'void'
         },
         {
             id: 3, company: 'Pramerica', title: 'Full Stack Developer',
@@ -31,7 +31,7 @@ export class Constants {
     which I worked mainly with Spring, MS SQL server, JSP, javaScript/jQuery on windows servers.    
      `,
             url: 'https://pramerica.ie',
-            state: 'inactive'
+            state: 'void'
         },
         {
             id: 4, company: 'Freelance', title: 'Front-End Developer',
@@ -41,7 +41,7 @@ export class Constants {
             and jQuery, on a Platform by another local company: Lemonstand.            
         `, 
             url: 'https://fuud.ca',
-            state: 'inactive'
+            state: 'void'
         }
     ];
 

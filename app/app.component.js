@@ -14,10 +14,19 @@ var JOBS = constants_1.Constants.JOBS;
 var TITLE = constants_1.Constants.title;
 var AppComponent = (function () {
     function AppComponent() {
+        var _this = this;
         this.jobList = JOBS;
         this.title = TITLE;
+        this.deselectAll = function () {
+            console.log('deselectAll');
+            for (var _i = 0, _a = _this.jobList; _i < _a.length; _i++) {
+                var job = _a[_i];
+                job.state = 'void';
+            }
+        };
     }
     AppComponent.prototype.onSelect = function (job) {
+        this.deselectAll();
         job.state = 'active';
         this.selectedJob = job;
     };
@@ -26,7 +35,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n\t<h1>{{title}}</h1>\n\t<about-me></about-me>\n\t<section class=\"job\">\n\t\t<ul class=\"job-list\">\n\t\t<li *ngFor=\"let job of jobList\" (click)=\"onSelect(job)\" [ngClass]=\"{'selected' : selectedJob === job}\">\n\t\t\t\t<span>{{job.company}}</span>\n\t\t\t\t<my-job-detail [job]=\"job\"></my-job-detail>\n\t\t</li>\n\t</ul>\n\t</section>\n  "
+        template: "\n\t<h1>{{title}}</h1>\n\t<section>\n\t<about-me></about-me>\n\t</section>\n\t<section class=\"job\">\n\t\t<ul class=\"job-list\">\n\t\t<li *ngFor=\"let job of jobList\" (click)=\"onSelect(job)\" [ngClass]=\"{'selected' : selectedJob === job}\">\n\t\t\t\t<span>{{job.company}}</span>\n\t\t</li>\n\t</ul>\n\t</section>\n\t<section class=\"job-wrapper\">\n\t\t<article *ngFor=\"let job of jobList\" class=\"job-details\">\n\t\t\t<my-job-detail [job]=\"job\"></my-job-detail>\n\t\t</article>\n\t</section>\n  "
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
