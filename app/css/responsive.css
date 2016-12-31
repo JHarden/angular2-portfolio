@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+  ul.navigation-wrapper li.header-icon {
+    display: none; }
+  body {
+    margin: 10px;
+    background-image: url("../assets/xmas.gif");
+    background-repeat: repeat;
+    background-size: auto; }
+  .demo-wrapper {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .demo-wrapper .demos {
+      margin-bottom: 5px; }
+  ul.job-list {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    ul.job-list li {
+      width: 50%;
+      float: left;
+      display: block;
+      position: relative;
+      padding: 0;
+      height: 50px;
+      margin-bottom: 5px;
+      margin-right: 0; }
+      ul.job-list li span {
+        line-height: 3;
+        padding-left: 15px; } }

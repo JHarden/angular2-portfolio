@@ -10,12 +10,14 @@ import { Demo } from './demo';
     template:
     `
     <div *ngIf="demo" class="demo-content">
-        <h2>{{demo.title}}</h2>
-        <span class="line"></span>
+        <h2>{{demo.title}}
+         <span class="line"></span>
+         </h2>
+       
         <p>{{demo.description}}</p>
     
-        <a target="_blank" href="{{demo.href}}" class="demo-link" >Start the Demo</a>
-        <a target="_blank" href="#" class="github-link">view on github</a>
+        <a target="_blank" href="{{demo.url}}" class="demo-link" >Start the Demo</a>
+        <a target="_blank" href="{{demo.githubUrl}}" class="github-link">view on github</a>
     
     </div>
     `

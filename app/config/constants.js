@@ -7,7 +7,7 @@ var Constants = (function () {
 Constants.JOBS = [
     {
         id: 1, company: 'PNI Digital Media', title: 'Front-End Developer',
-        description: "I've been working at PNI Digital Media since March 2015. I started off as a web designer within our creative department.\n     I've since moved to our Development department, where I now work as a front end engineer on our Apollo Platform. I primarily \n     work with Angular 1.5, Typescript, SCSS, ES6 javaScript on a node server.\n     ",
+        description: "I've been working at PNI Digital Media since March 2015. I started off as a web designer within our creative department.\n     I've since moved to our Development department, where I now work as a front end engineer on our Apollo Platform. I primarily \n     work with Angular 1.5, React, Redux, Typescript, SCSS, ES6 javaScript on a node server.\n     ",
         url: 'https://pnimedia.com',
         state: 'void'
     },
@@ -19,7 +19,7 @@ Constants.JOBS = [
     },
     {
         id: 3, company: 'Pramerica', title: 'Full Stack Developer',
-        description: "I started my career as a software developer in Pramerica, in a small town in rural Ireland. I stated off as a back end Java developer\n    focusing mainly on maintining our third party CMS tool. After my first year I moved towards more of a full-stack developer role in\n    which I worked mainly with Spring, MS SQL server, JSP, javaScript/jQuery on windows servers.    \n     ",
+        description: "I started my career as a software developer in Pramerica, a subsidiary of Prudential Financial. Working as a back end developer\n    focusing mainly on maintining our third party CMS tool. After my first year I moved towards more of a full-stack developer role in\n    which I worked mainly with Spring, MS SQL server, JSP, javaScript/jQuery on windows servers.    \n     ",
         url: 'https://pramerica.ie',
         state: 'void'
     },
@@ -30,18 +30,18 @@ Constants.JOBS = [
         state: 'void'
     }
 ];
-Constants.aboutMe = "\n    Hi, my name is John Harden. I'm a front end developer living in Vancouver, British Columbia. I've been here since 2014, and have just recieved\n    Permanent Residency status (YAY!). I like to keep myself occupied by exploring this beautiful country, as well as the rest of the pacific north west.\n    I very much enjoy running, swimming, hiking and all that jazz. In my extra spare time I like to learn about the coolest new things in tech. God knows\n    how many times I've rewritten this page using different technologies!.\n    I'm originially from the north west of Ireland, I've travelled around the world and decided to settle in Vancouver. It is a lovely place. :D    \n    ";
+Constants.aboutMe = "\n    Hi, my name is John Harden. I'm a front end developer living in Vancouver, British Columbia. I've been here since 2014, and have just recieved\n    Permanent Residency status. I like to keep myself occupied by exploring this beautiful country, as well as the rest of the pacific north west.\n    I very much enjoy running, swimming, hiking and exploring. In my spare time I like to learn about the coolest new things in tech. \n    I'm originially from the north west of Ireland, I've travelled around the world and decided to settle in Vancouver.  :D    \n    ";
 Constants.title = 'John Harden';
 Constants.DEMOS = [
     {
-        title: 'Tile Animation Proof of Concept',
-        description: 'Description of tile animation thingy',
+        title: 'Tile Animation',
+        description: 'Staggering various tile animations using transforms, javaScript controlled css animations',
         url: 'http://johnmharden.com/tiles.html',
         githubUrl: 'https://github.com/JHarden/tile-slide-poc'
     },
     {
-        title: 'Filtergram',
-        description: 'Instagram clone using canvas and localStorage to manipulate / save image',
+        title: 'Instagram Clone',
+        description: 'Instagram clone using javaScript canvas and localStorage to manipulate / save image',
         url: 'http://johnmharden.com/filtergram.html',
         githubUrl: 'https://github.com/JHarden/filtergram'
     }

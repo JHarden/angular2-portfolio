@@ -21,6 +21,8 @@
       margin-right: 0; }
     .demo-wrapper .demos h2 {
       transition: all 0.25s cubic-bezier(0, 0, 0.2, 1); }
+    .demo-wrapper .demos p {
+      padding: 0 10px; }
     .demo-wrapper .demos:hover {
       background: rgba(235, 235, 235, 0.75);
       cursor: pointer; }
@@ -29,9 +31,9 @@
         -ms-transform: translateY(-20px);
         transform: translateY(-20px); }
       .demo-wrapper .demos:hover .line {
-        width: 50%;
+        width: 190px;
         height: 2px;
-        background: linear-gradient(to right, #3C3D90, transparent);
+        border-bottom: 1px solid #3C3D90;
         display: block;
         position: absolute;
         top: 35px;
