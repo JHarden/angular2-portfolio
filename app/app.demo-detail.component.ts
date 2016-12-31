@@ -9,7 +9,7 @@ import { Demo } from './demo';
     selector: 'demo-detail',
     template:
     `
-    <div *ngIf="demo" class="demo-content">
+    <div *ngIf="demo" class="demo-content">  
         <h2>{{demo.title}}
          <span class="line"></span>
          </h2>

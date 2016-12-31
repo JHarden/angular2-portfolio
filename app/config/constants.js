@@ -37,13 +37,13 @@ Constants.DEMOS = [
         title: 'Tile Animation',
         description: 'Staggering various tile animations using transforms, javaScript controlled css animations',
         url: 'http://johnmharden.com/tiles.html',
-        githubUrl: 'https://github.com/JHarden/tile-slide-poc'
+        githubUrl: 'https://github.com/JHarden/tile-slide-poc',
     },
     {
         title: 'Instagram Clone',
         description: 'Instagram clone using javaScript canvas and localStorage to manipulate / save image',
         url: 'http://johnmharden.com/filtergram.html',
-        githubUrl: 'https://github.com/JHarden/filtergram'
+        githubUrl: 'https://github.com/JHarden/filtergram',
     }
 ];
 Constants.NAVIGATION = [

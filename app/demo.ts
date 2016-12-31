@@ -5,6 +5,4 @@ export class Demo {
 	description: string;
 	url: string;
 	githubUrl: string;
-    technologies: string[];
-
 }

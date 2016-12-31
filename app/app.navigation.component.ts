@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Constants } from './config/constants';
 
-private const nav = Constants.NAVIGATION;
+const nav = Constants.NAVIGATION;
 
 @Component({
     selector: 'navigation',

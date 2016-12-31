@@ -1,7 +1,7 @@
 
 import { Component } from '@angular/core';
 import { Job } from './Job';
-import { DemoComponent } from '../app.demo.component';
+import { Demo } from './Demo';
 import { Constants } from './config/constants';
 
 const JOBS = Constants.JOBS;

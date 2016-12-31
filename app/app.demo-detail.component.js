@@ -22,7 +22,7 @@ __decorate([
 DemoDetailComponent = __decorate([
     core_1.Component({
         selector: 'demo-detail',
-        template: "\n    <div *ngIf=\"demo\" class=\"demo-content\">\n        <h2>{{demo.title}}\n         <span class=\"line\"></span>\n         </h2>\n       \n        <p>{{demo.description}}</p>\n    \n        <a target=\"_blank\" href=\"{{demo.url}}\" class=\"demo-link\" >Start the Demo</a>\n        <a target=\"_blank\" href=\"{{demo.githubUrl}}\" class=\"github-link\">view on github</a>\n    \n    </div>\n    "
+        template: "\n    <div *ngIf=\"demo\" class=\"demo-content\">  \n        <h2>{{demo.title}}\n         <span class=\"line\"></span>\n         </h2>\n       \n        <p>{{demo.description}}</p>\n    \n        <a target=\"_blank\" href=\"{{demo.url}}\" class=\"demo-link\" >Start the Demo</a>\n        <a target=\"_blank\" href=\"{{demo.githubUrl}}\" class=\"github-link\">view on github</a>\n    \n    </div>\n    "
     }),
     __metadata("design:paramtypes", [])
 ], DemoDetailComponent);
