@@ -30,7 +30,7 @@ Constants.JOBS = [
         state: 'void'
     }
 ];
-Constants.aboutMe = "\n    Hi, my name is John Harden. I'm a front end developer living in Vancouver, British Columbia. I've been here since 2014, and have just recieved\n    Permanent Residency status. I like to keep myself occupied by exploring this beautiful country, as well as the rest of the pacific north west.\n    I very much enjoy running, swimming, hiking and exploring. In my spare time I like to learn about the coolest new things in tech. \n    I'm originially from the north west of Ireland, I've travelled around the world and decided to settle in Vancouver.  :D    \n    ";
+Constants.aboutMe = "\n    Hi, my name is John Harden. I'm a front end developer living in Vancouver, British Columbia. I've been here since 2014, and have just received\n    Permanent Residency status. I like to keep myself occupied by exploring this beautiful country, as well as the rest of the pacific north west.\n    I very much enjoy running, swimming, hiking and travelling. In my spare time I like to learn about the coolest new things in tech. \n    I'm originially from the north west of Ireland, I've travelled around the world and decided to settle in Vancouver.\n    ";
 Constants.title = 'John Harden';
 Constants.DEMOS = [
     {

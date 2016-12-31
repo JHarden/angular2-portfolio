@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var Job_1 = require("./Job");
+var job_1 = require("./job");
 var JobDetailComponent = (function () {
     function JobDetailComponent() {
     }
@@ -17,7 +17,7 @@ var JobDetailComponent = (function () {
 }());
 __decorate([
     core_1.Input(),
-    __metadata("design:type", Job_1.Job)
+    __metadata("design:type", job_1.Job)
 ], JobDetailComponent.prototype, "job", void 0);
 JobDetailComponent = __decorate([
     core_1.Component({

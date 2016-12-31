@@ -48,10 +48,10 @@ export class Constants {
 
     public static aboutMe: string =
     `
-    Hi, my name is John Harden. I'm a front end developer living in Vancouver, British Columbia. I've been here since 2014, and have just recieved
+    Hi, my name is John Harden. I'm a front end developer living in Vancouver, British Columbia. I've been here since 2014, and have just received
     Permanent Residency status. I like to keep myself occupied by exploring this beautiful country, as well as the rest of the pacific north west.
-    I very much enjoy running, swimming, hiking and exploring. In my spare time I like to learn about the coolest new things in tech. 
-    I'm originially from the north west of Ireland, I've travelled around the world and decided to settle in Vancouver.  :D    
+    I very much enjoy running, swimming, hiking and travelling. In my spare time I like to learn about the coolest new things in tech. 
+    I'm originially from the north west of Ireland, I've travelled around the world and decided to settle in Vancouver.
     `;
 
     public static title: string = 'John Harden';
@@ -71,6 +71,7 @@ export class Constants {
             githubUrl: 'https://github.com/JHarden/filtergram',
 
         }
+        
     ];
 
     public static NAVIGATION: any = [

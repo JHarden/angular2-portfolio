@@ -8,7 +8,7 @@ import {
     animate 
 } from '@angular/core';
 
-import { Job } from './Job';
+import { Job } from './job';
 
 @Component({
     selector: 'my-job-detail',
