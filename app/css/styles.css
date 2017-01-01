@@ -237,4 +237,6 @@ ul.navigation-wrapper {
   ul.navigation-wrapper {
     height: 60px; }
     ul.navigation-wrapper a {
-      line-height: 2; } }
+      line-height: 2; }
+  .demo-wrapper .demos .demo-content {
+    padding: 10px 0 0 10px; } }
