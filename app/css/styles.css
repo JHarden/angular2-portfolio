@@ -5,7 +5,8 @@ body {
   margin: 2em;
   background-image: url("../assets/whistler.jpg");
   background-size: cover;
-  min-height: 800px; }
+  min-height: 800px;
+  background-attachment: fixed; }
 
 h1 {
   color: #A9A9F1;
@@ -219,7 +220,8 @@ ul.navigation-wrapper {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 0; }
     ul.job-list li {
       width: 50%;
       float: left;
@@ -231,4 +233,8 @@ ul.navigation-wrapper {
       margin-right: 0; }
       ul.job-list li span {
         line-height: 3;
-        padding-left: 15px; } }
+        padding-left: 15px; }
+  ul.navigation-wrapper {
+    height: 60px; }
+    ul.navigation-wrapper a {
+      line-height: 2; } }

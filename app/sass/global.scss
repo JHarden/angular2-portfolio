@@ -3,11 +3,12 @@ html{
 }
 
 body {
+  
   margin: 2em;
   background-image: url('../assets/whistler.jpg');
   background-size: cover;
   min-height: 800px;
-  
+  background-attachment: fixed;
 }
 
 h1 {

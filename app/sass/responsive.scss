@@ -26,6 +26,7 @@
         
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 0;
 
         li {
             width: 50%;
@@ -43,4 +44,11 @@
             }
         }
     } 
+
+    ul.navigation-wrapper{
+        height: 60px;
+        a{
+            line-height: 2;
+        }
+    }
 }
